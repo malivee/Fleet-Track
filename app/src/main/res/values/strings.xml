@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fleet Track</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="closed">Closed</string>
+    <string name="open">Open</string>
+    <string name="stop_moving">Stop Moving</string>
+    <string name="start_moving">Start Moving</string>
+</resources>

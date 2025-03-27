@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:backgroundTint="#B9DDED"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    card_view:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_engine"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/line_md_engine_filled"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_engine_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Engine Status"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            card_view:layout_constraintStart_toEndOf="@id/img_engine"
+            card_view:layout_constraintTop_toTopOf="@id/img_engine" />
+
+        <TextView
+            android:id="@+id/tv_engine_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="1.5sp"
+            android:maxLines="4"
+            android:text="Off"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            card_view:layout_constraintStart_toEndOf="@id/img_engine"
+            card_view:layout_constraintTop_toBottomOf="@id/tv_engine_title" />
+
+        <Button
+            android:id="@+id/btn_toogle_engine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/black"
+            android:text="Toogle"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="@id/img_engine" />
+
+        <ImageView
+            android:id="@+id/img_door"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/mingcute_door_fill"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@id/img_engine" />
+
+        <TextView
+            android:id="@+id/tv_door_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Door Status"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            card_view:layout_constraintStart_toEndOf="@id/img_door"
+            card_view:layout_constraintTop_toTopOf="@id/img_door" />
+
+        <TextView
+            android:id="@+id/tv_door_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="1.5sp"
+            android:maxLines="4"
+            android:textColor="@color/red"
+            android:text="Open"
+            android:textSize="12sp"
+            card_view:layout_constraintStart_toEndOf="@id/img_door"
+            card_view:layout_constraintTop_toBottomOf="@id/tv_door_title" />
+
+        <Button
+            android:id="@+id/btn_toogle_door"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/black"
+            android:text="Toogle"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="@id/img_door" />
+
+
+        <ImageView
+            android:id="@+id/img_speed"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/material_symbols_speed"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@id/img_door" />
+
+        <TextView
+            android:id="@+id/tv_speed_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Speed"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            card_view:layout_constraintStart_toEndOf="@id/img_speed"
+            card_view:layout_constraintTop_toTopOf="@id/img_speed" />
+
+        <TextView
+            android:id="@+id/tv_speed_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="1.5sp"
+            android:maxLines="4"
+            android:text="0"
+            android:textSize="12sp"
+            card_view:layout_constraintStart_toEndOf="@id/img_speed"
+            card_view:layout_constraintTop_toBottomOf="@id/tv_speed_title" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/black"
+            android:text="Start Moving"
+            android:textColor="@color/white"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@id/img_speed" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/green"
+            android:text="See in Dashboard"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@id/btn_start" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
